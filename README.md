@@ -1,8 +1,8 @@
 # commit-traders
 
 ## It is important to have these 2 at the beginning of our Jupyter File, in order to have all the useful functions.
-* %run commit_traders_financial.ipynb
-* %run commit_traders_commodities.ipynb
+* from commit_traders_financial import * 
+* from commit_traders_commodities import *
 
 ## How to use this repo? 
 
