@@ -1,3 +1,10 @@
+'''
+-----------------------------------------------------------------------------
+Developed by: Israel Castillo / Financial Engineer ---> castillo.israel@gmail.com
+In collaboration and supervision of IteraCapital
+----------------------------------------------------------------------------
+'''
+
 import urllib.request
 import zipfile
 import pandas as pd
@@ -13,15 +20,15 @@ def DownloadFinancial(start_year, end_year):
     yearly_report = {}
     years_to_download =  [str(x) for x in range(start_year, end_year+1, 1)]
     #years_to_download = ['2015', '2016', '2017', '2018', '2019', '2020']
-    os.mkdir('../comit-traders/financia')
+    os.mkdir('../financial')
     for year in years_to_download:
         print('File download Year ' + year)
         url = 'https://www.cftc.gov/files/dea/history/fut_fin_xls_'+year+'.zip'
-        path_to_zip_file = '../comit-traders/financial/fut_disagg_xls_'+year+'.zip'
+        path_to_zip_file = '../financial/fut_disagg_xls_'+year+'.zip'
         urllib.request.urlretrieve(url, path_to_zip_file)
         with zipfile.ZipFile(path_to_zip_file, 'r') as zip_ref:
-            zip_ref.extractall('../comit-traders/financial/'+year)
-        path = '../comit-traders/financial/'+year
+            zip_ref.extractall('../financial/'+year)
+        path = '../financial/'+year
         yearly_report[year] = pd.read_excel(path+'/FinFutYY.xls')
 
 ## After Downloading Give me the FinancialReports in DF
@@ -29,7 +36,7 @@ def FinancialReports(start_year, end_year, *current_year):
     yearly_report = {}
     years_to_download =  [str(x) for x in range(start_year, end_year+1, 1)]
     for year in years_to_download:
-        path = '../comit-traders/financial/'+year
+        path = '../financial/'+year
         yearly_report[year] = pd.read_excel(path+'/FinFutYY.xls')
     if current_year:
         return yearly_report[str(*current_year)]
