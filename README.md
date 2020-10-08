@@ -117,7 +117,9 @@ from commit_traders_commodities import *
    Muestra las posiciones de los No Reportables, tanto de Compra, Venta y Spreading, como un DataFrame.
  
  
- 
-Desarrollado por: Israel Castillo. Ingenierio Financiero. castillo.israelh@gmail.com
-
+```python
+'''
+Desarrollado por: Israel Castillo. // Ingenierio Financiero // castillo.israelh@gmail.com
 En colaboración y supervisión de: IteraCapital
+'''
+
