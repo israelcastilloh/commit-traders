@@ -1,6 +1,6 @@
 # commit-traders 
 
-### Es importante tener estos dos comandos al principio de nuestro Jupyter-Notebook para obtener las funcionalidades de esta librería. 
+### Uso:
 ```python
 from commit_traders_financial import * 
 from commit_traders_commodities import *
