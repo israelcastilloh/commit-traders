@@ -1,6 +1,6 @@
 # commit-traders 
 
-### Uso:
+## Uso:
 ```python
 from commit_traders_financial import * 
 from commit_traders_commodities import *
@@ -41,23 +41,18 @@ from commit_traders_commodities import *
   
   ```python
   DealerPosition(asset, year, *start_date, **end_date)
-  ```
-  Muestra las posiciones de los Intermediarios, tanto de Compra, Venta y Spreading, como un DataFrame.
-  
-  ```python
   ManagerPosition(asset, year,  *start_date, **end_date)
-  ```
-  Muestra las posiciones de los Gestores de Capital, tanto de Compra, Venta y Spreading, como un DataFrame.
-  
-  ```python
   LevFundsPosition(asset, year,  *start_date, **end_date)
-  ```
-  Muestra las posiciones de los Fondos Apalancados, tanto de Compra, Venta y Spreading, como un DataFrame.
-  
-  ```python
   OtherRepPosition(asset, year,  *start_date, **end_date)
   ```
-  Muestra las posiciones de Otros Reportables, tanto de Compra, Venta y Spreading, como un DataFrame.
+  Muestra las posiciones de los **Intermediarios**, tanto de Compra, Venta y Spreading, como un DataFrame.
+  
+  Muestra las posiciones de los **Gestores de Capital**, tanto de Compra, Venta y Spreading, como un DataFrame.
+  
+  Muestra las posiciones de los **Fondos Apalancados**, tanto de Compra, Venta y Spreading, como un DataFrame.
+  
+  Muestra las posiciones de Otros **Reportables**, tanto de Compra, Venta y Spreading, como un DataFrame.
+  
 
 ## 2) Futuros de Materias Primas (Commodities)
   
@@ -93,28 +88,21 @@ from commit_traders_commodities import *
 
   ```python
   ProducerMerchantPosition(asset, year,  *start_date, **end_date)
-  ```
-  Muestra las posiciones de los Productores y Mercantes, tanto de Compra, Venta y Spreading, como un DataFrame.
-  
-  ```python
   SwapDealerPosition(asset, year,  *start_date, **end_date)
-  ```   
-   Muestra las posiciones de los Intermediarios de Swap, tanto de Compra, Venta y Spreading, como un DataFrame.
-  
-  ```python
   ManagedMoneyPosition(asset, year,  *start_date, **end_date)
-  ```   
-   Muestra las posiciones de los Gestores de Capital, tanto de Compra, Venta y Spreading, como un DataFrame.
-  
-  ```python
   OtherRepPosition(asset, year,  *start_date, **end_date)
-  ```    
-   Muestra las posiciones de Otros Reportables, tanto de Compra, Venta y Spreading, como un DataFrame.
-  
-  ```python
   NonRepPosition(asset, year,  *start_date, **end_date)
    ```
-   Muestra las posiciones de los No Reportables, tanto de Compra, Venta y Spreading, como un DataFrame.
+  
+  Muestra las posiciones de los **Productores y Mercantes**, tanto de Compra, Venta y Spreading, como un DataFrame.
+  
+  Muestra las posiciones de los **Intermediarios de Swap**, tanto de Compra, Venta y Spreading, como un DataFrame.
+  
+  Muestra las posiciones de los **Gestores de Capital**, tanto de Compra, Venta y Spreading, como un DataFrame.
+  
+  Muestra las posiciones de **Otros Reportables**, tanto de Compra, Venta y Spreading, como un DataFrame.
+  
+  Muestra las posiciones de los **No Reportables**, tanto de Compra, Venta y Spreading, como un DataFrame.
  
  
 ```python
